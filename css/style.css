@@ -1,0 +1,470 @@
+  /* 
+   Stylesheet for "Renegades: The American School at Bizzell" Static Site //
+  
+   Table of Contents
+   - - - - - - - - -
+   General Styles
+   Homepage
+   Parallax
+   Parallax Replacement (Mobile)
+   Color Block
+   Buttons
+   Navigation Bar
+   Subscribe Form
+   Global Footer
+   Social Media Icons
+   - - - - - - - - -
+ */
+ 
+ /**
+ * General Styles
+ */
+ 
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.col-md-12{
+	padding: 0;
+}	
+
+body {
+    font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
+	font-size: 1.5em;
+	line-height: 1.25;
+	padding-top: 170px;
+	
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+h4, h5, h6{
+	font-weight: bold;
+}
+
+a {
+    color: #315d4f;
+	font-weight: bold;
+}
+
+a:hover{
+	color: #203c33;
+}
+
+.dropshadow-border{ /* Border + dropshadow design element */
+	padding: 15px;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+	box-shadow: 2px 2px 4px #eaeaea;
+	margin-bottom: 10px;
+}
+
+.center{
+	text-align: center;
+}
+
+.img-center{
+	margin: 0 auto;
+}
+
+.fixed-to-top{
+	position: fixed; 
+    top: 0;
+    width: 100%;
+	z-index: 1030;
+}
+
+.lib-logo{
+	background-color: #585858;
+}
+
+  @media (max-width: 1180px) {
+    .lib-logo{
+		border-bottom: 0px;
+  }
+  } 
+
+.lib-logo img{
+	padding: 15px 20px 15px 30px;
+} 
+
+
+
+
+ /**
+ * Homepage
+ */
+
+.intro-quote{
+	font-size: 1.9em;
+	font-family: 'Fjalla One', sans-serif;
+	color: #383838;
+	padding: 40px;
+	border: dashed #000;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+
+  @media (max-width: 800px) {
+    .intro-quote{
+		font-size: 1.3em;
+  }
+  }  
+  
+.section-wires{
+	background-image: url('../img/wires.png');
+	background-position: center;
+	 background-repeat: no-repeat;
+	background-color: #e3e3e3;
+	padding: 20px;
+}
+
+.section-gray{
+	background-color: #fff;
+	padding: 50px;
+}
+
+
+ @media (max-width: 500px) {
+  .img-hide {
+    display: none;
+  }
+
+}
+
+/*Paragraph Bundle Style*/ 
+
+.featured{
+	border: 1px solid #cecece;
+	padding: 5px;
+	margin-bottom: 15px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+	background: #fff;
+}
+
+.featured-section{
+	border-bottom: 1px dashed #cecece;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	padding: 15px 0 15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+
+ /**
+ * Parallax
+ */
+
+.parallax-window {
+	min-height: 100vh;
+	background: none;
+	position: relative;
+	margin-top: -170px;
+}
+
+  @media (max-width: 800px) {
+    .parallax-window{
+		display: none;
+  }
+  } 
+
+.bounce {
+    position: absolute;
+	font-size: 2em;
+	color: #fff;
+	opacity: .6;
+    left:50%;
+    bottom:0;
+	margin-top:-25px;
+    margin-left:-25px;
+    width:50px;
+	height: 50px;
+	z-index: 50;
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+}
+  
+.bounce:hover{
+	opacity: .9;
+	color: #fff;
+	text-decoration: none;
+}
+  
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+  
+  
+  
+ /**
+ * Parallax Replacement (Mobile)
+ */  
+ 
+
+  @media (min-width: 800px) {
+    .header{
+		display: none;
+  }
+  } 
+
+
+
+  
+ /**
+ * Color Block
+ */
+
+.color-block {
+    background: #000;
+    color: #fff;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.color-block:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-2.9deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+
+
+
+ /**
+ * Buttons
+ */
+
+.btn-custom {
+	background-color: #01756c;
+	border: 0;
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.btn-custom:hover {
+	background-color: #043a3c;
+	border: 0;
+	color: #fff;
+}
+
+ 
+ 
+ 
+ /**
+ * Navigation Bar
+ */
+
+.navbar{
+	background-color: #fff;
+	border-radius: 0;
+	font-size: 1.4em;
+	padding: 5px;
+} 
+
+  @media (max-width: 800px) {
+    .navbar{
+		font-size: 1.2em;
+		background-color:hsla(360,100%,100%,1);
+  }
+  }
+
+.navbar-brand{
+	font-size: 1.5em;
+	font-family: 'Fjalla One', sans-serif;
+	color: #01756c;
+}
+
+.navbar-brand a{
+	color: #000;
+}
+
+  @media (max-width: 800px) {
+    .navbar-brand{
+		font-size: 1.4em;
+  }
+  } 
+
+.navbar-default .navbar-nav>li>a{
+	color: #01756c;
+	border-bottom: 4px solid transparent;
+}
+ 
+.navbar-default .navbar-nav>li>a:hover{
+	color: #043a3c;
+	border-bottom: 4px solid #cccccc;
+} 
+
+ 
+
+ 
+ /**
+ * Subscribe Form
+ */	
+
+.subscribe{
+	font-size: 1.2em;
+}
+
+.update-form{
+	margin-top: 10px;
+}
+
+.update-form img{
+	margin-top: 10px;
+}
+ 
+
+ 
+
+ /**
+ * Global Footer
+ */	
+ 
+.footer{
+    background-color: #333;
+    color: #999;
+    font-size: 1em;
+    line-height: 1.2em;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 2%;
+	border-top: 7px solid #1f1f1f;
+    width: 100%;
+	margin-top:0;
+}
+
+.footer a{
+    color: #ececec !important;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer ul{ 
+	margin: 0; 
+	padding: 0;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer img{
+	float: left;
+	padding-right: 1em;
+}
+
+
+
+
+ /**
+ * Social Media Icons
+ */	
+
+.social ul{
+    display: block;
+}
+
+.social ul li a.facebook,
+.social ul li a.twitter,
+.social ul li a.youtube,
+.social ul li a.instagram{
+    display: block; 
+    height: 45px;
+    width: 45px;
+    float: left;
+}
+
+.social ul li a {
+    /*background-image: url(../img/social-icons.png);*/
+    background-repeat:no-repeat;
+	line-height:0;
+	margin-right:5px;
+}
+
+.social ul li a.facebook{ 
+	background-position:0 0; 
+}
+
+.social ul li a.facebook:hover{ 
+	background-position:-46px 0; 
+}
+
+.social ul li a.twitter{ 
+	background-position:0 -46px; 
+}
+
+.social ul li a.twitter:hover{ 
+	background-position:-46px -46px; 
+}
+
+.social ul li a.youtube{ 
+	background-position: 0 -92px; 
+}
+
+.social ul li a.youtube:hover{ 
+	background-position: -46px -92px; 
+}
+
+.social ul li a.instagram{ 
+	background-position: 0 -276px; 
+}
+
+.social ul li a.instagram:hover{ 
+	background-position: -46px -276px; 
+}
+
+.contact_icons{
+	float: left;
+}
+
+.mc-field-group {
+	padding:10px 0px 10px 0px;
+	
+}
