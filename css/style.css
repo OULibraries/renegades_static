@@ -165,7 +165,7 @@ a:hover{
  */
 
 .parallax-window {
-	min-height: 100vh;
+	min-height: 90vh;
 	background: none;
 	position: relative;
 	margin-top: -170px;
@@ -176,54 +176,6 @@ a:hover{
 		display: none;
   }
   } 
-
-.bounce {
-    position: absolute;
-	font-size: 2em;
-	color: #fff;
-	opacity: .6;
-    left:50%;
-    bottom:0;
-	margin-top:-25px;
-    margin-left:-25px;
-    width:50px;
-	height: 50px;
-	z-index: 50;
-    -webkit-animation:bounce 1s infinite;
-    -moz-animation:bounce 1s infinite;
-    -o-animation:bounce 1s infinite;
-    animation:bounce 1s infinite;
-}
-  
-.bounce:hover{
-	opacity: .9;
-	color: #fff;
-	text-decoration: none;
-}
-  
-  @-webkit-keyframes bounce {
-    0%       { bottom:0px; }
-    50%      { bottom:15px; }
-    100%     {bottom:30;}
-  }
-  
-   @-moz-keyframes bounce {
-    0%       { bottom:0px; }
-    50%      { bottom:15px; }
-    100%     {bottom:30;}
-  }
-  
-   @-o-keyframes bounce {
-    0%       { bottom:0px; }
-    50%      { bottom:15px; }
-    100%     {bottom:30;}
-  }
-  
-   @keyframes bounce {
-    0%       { bottom:0px; }
-    50%      { bottom:15px; }
-    100%     {bottom:30;}
-  }
   
   
   
