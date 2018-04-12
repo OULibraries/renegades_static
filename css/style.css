@@ -20,7 +20,6 @@
  * General Styles
  */
  
-
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
@@ -30,15 +29,22 @@
 
 .col-md-12{
 	padding: 0;
-}	
+}
 
 body {
-    font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
+	font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
 	font-size: 1.5em;
 	line-height: 1.25;
-	padding-top: 170px;
-	
-}
+	padding-top: 168px;
+}	
+
+
+
+.about-spacing {
+    padding-top: 30px;
+  }
+
+
 
 h1, h2, h3 {
 	font-weight: bold;
@@ -49,12 +55,12 @@ h4, h5, h6{
 }
 
 a {
-    color: #315d4f;
+    color: #7fb6d2;
 	font-weight: bold;
 }
 
 a:hover{
-	color: #203c33;
+	color: #153f59;
 }
 
 .dropshadow-border{ /* Border + dropshadow design element */
@@ -81,7 +87,7 @@ a:hover{
 }
 
 .lib-logo{
-	background-color: #585858;
+	background-color: #000;
 }
 
   @media (max-width: 1180px) {
@@ -96,7 +102,6 @@ a:hover{
 
 
 
-
  /**
  * Homepage
  */
@@ -106,14 +111,14 @@ a:hover{
 	font-family: 'Fjalla One', sans-serif;
 	color: #383838;
 	padding: 40px;
-	border: dashed #000;
+	border: dashed #841617;
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 
 }
 
   @media (max-width: 800px) {
     .intro-quote{
-		font-size: 1em;
+		font-size: 1.3em;
   }
   }  
   
@@ -131,12 +136,14 @@ a:hover{
 }
 
 
- @media (max-width: 500px) {
+ @media (max-width: 768px) {
   .img-hide {
     display: none;
   }
 
 }
+
+
 
 /*Paragraph Bundle Style*/ 
 
@@ -150,13 +157,12 @@ a:hover{
 
 .featured-section{
 	border-bottom: 1px dashed #cecece;
-	background-color: #f9f9f9;
+	background-color: #fdfdfd;
 	border-radius: 5px;
 	padding: 15px 0 15px 0;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-
 
 
 
@@ -179,7 +185,6 @@ a:hover{
   
   
   
-  
  /**
  * Parallax Replacement (Mobile)
  */  
@@ -192,14 +197,13 @@ a:hover{
   } 
 
 
-
   
  /**
  * Color Block
  */
 
 .color-block {
-    background: #000;
+    background: #153f59;
     color: #fff;
     padding: 50px;
     position: relative;
@@ -222,13 +226,12 @@ a:hover{
 
 
 
-
  /**
  * Buttons
  */
 
 .btn-custom {
-	background-color: #01756c;
+	background-color: #7fb6d2;
 	border: 0;
 	color: #fff;
 	font-size: 1em;
@@ -238,12 +241,15 @@ a:hover{
 }
 
 .btn-custom:hover {
-	background-color: #043a3c;
+	background-color: #153f59;
 	border: 0;
 	color: #fff;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
- 
  
  
  /**
@@ -257,40 +263,52 @@ a:hover{
 	padding: 5px;
 } 
 
-  @media (max-width: 800px) {
+  @media (max-width: 845px) {
     .navbar{
-		font-size: 1.2em;
-		background-color:hsla(360,100%,100%,1);
-  }
-  }
-
-.navbar-brand{
-	font-size: 1.5em;
-	font-family: 'Fjalla One', sans-serif;
-	color: #01756c;
-}
-
-.navbar-brand a{
-	color: #000;
-}
-
-  @media (max-width: 800px) {
-    .navbar-brand{
-		font-size: 1.4em;
+	font-size: 1.2em;
   }
   } 
 
+
+  
+@media (min-width: 768px) and (max-width: 845px) {
+   .navbar-collapse.collapse {
+       display: none !important;
+   }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+	  .navbar-header {
+        float:none;
+    }
+}
+
 .navbar-default .navbar-nav>li>a{
-	color: #01756c;
-	border-bottom: 4px solid transparent;
+	color: #7fb6d2;
+	border-bottom: 8px solid transparent;
+	margin: 10px;
 }
  
 .navbar-default .navbar-nav>li>a:hover{
-	color: #043a3c;
-	border-bottom: 4px solid #cccccc;
-} 
+	color: #06131c;
+	border-bottom: 8px solid #133f59;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
 
- 
+
+  @media (max-width: 845px) {
+    .exhibit-logo{
+		width: 70%;
+		padding: 5px;
+  }
+  } 
+
 
  
  /**
@@ -311,7 +329,6 @@ a:hover{
  
 
  
-
  /**
  * Global Footer
  */	
@@ -320,10 +337,11 @@ a:hover{
     background-color: #333;
     color: #999;
     font-size: 1em;
+	padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     line-height: 1.2em;
-	padding-left: 15%;
-	padding-right: 15%;
-	padding-top: 2%;
 	border-top: 7px solid #1f1f1f;
     width: 100%;
 	margin-top:0;
@@ -351,7 +369,6 @@ a:hover{
 	float: left;
 	padding-right: 1em;
 }
-
 
 
 
