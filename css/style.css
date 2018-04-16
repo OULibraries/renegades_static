@@ -177,7 +177,7 @@ a:hover{
 	margin-top: -170px;
 }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1025px) {
     .parallax-window{
 		display: none;
   }
@@ -190,7 +190,7 @@ a:hover{
  */  
  
 
-  @media (min-width: 800px) {
+  @media (min-width: 1025px) {
     .header{
 		display: none;
   }
